@@ -1,0 +1,222 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
+body {
+  margin-left: 0;
+  margin-right: 0;
+  margin-top: 0;
+  font-family: "Roboto", "sans-serif";
+  font-size: 17px;
+}
+
+.hoja {
+  width: 21.6cm;
+  height: 32.97cm;
+  margin: 0 auto;
+  box-shadow: 0 1px black inset, 1px 0 black inset, 0 -1px black inset, -1px 0 black inset;
+  background-color: white;
+  text-align: justify;
+}
+
+.bordes {
+  box-shadow: 0 1px black inset, 1px 0 black inset, 0 -1px black inset, -1px 0 black inset;
+}
+
+.membrete {
+  display: flex;
+  justify-content: space-between;
+}
+
+.membrete img {
+  display: block;
+  max-height: 50px;
+  width: auto;
+}
+
+.hoja .contenido {
+  height: calc(100% - 0.5cm - 0.5cm);
+  padding-left: 1cm;
+  padding-right: 1cm;
+  padding-top: 0.5cm;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-doc {
+  background-color: white;
+}
+
+.info-doc .version {
+  font-size: 14px;
+  text-align: center;
+}
+
+.info-doc .titulo {
+  text-align: center;
+  font-size: 24px;
+}
+
+.info-doc .objetivo {
+  font-size: 14px;
+}
+
+.grid-alternativas {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
+.respuestas {
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 0 0 0 2px black inset;
+}
+
+.respuestas-item {
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+  width: 33.3%;
+  height: 3em;
+  box-shadow: 0 0 0 1px black inset;
+}
+
+.numerar-right {
+  text-align: right;
+  background-color: white;
+}
+
+.ejercicio {
+  display: grid;
+  grid-template-columns: 26px calc(100% - 26px);
+  justify-content: space-between;
+  grid-template-rows: auto;
+  background-color: white;
+  margin-top: 1.5em;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: 26px calc(100% - 26px);
+  justify-content: space-between;
+  grid-template-rows: auto;
+  background-color: white;
+  margin-top: 1.5em;
+}
+
+.item-ejercicios p {
+  margin-top: 0.8em;
+  margin-bottom: 0.8em;
+}
+
+.centrar-elementos-h {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.centrar-elemento {
+  margin: 0 auto;
+}
+
+.centrar-elementos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.centrar-elementos-v {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.opcion-correcta {
+  background-color: rgb(221, 224, 238);
+}
+
+.texto-justificado {
+  text-align: justify;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+.texto-alineado-right {
+  text-align: right;
+}
+
+.grid-respuestas {
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-between;
+  grid-template-rows: 48px 48px 48px 48px 48px 48px;
+}
+
+.grid-respuestas div {
+  align-self: center;
+  justify-self: center;
+}
+
+.titulo {
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+.subtitulo {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+/* Configuracón de la tabla */
+.tabla-datos {
+  margin-top: 50px;
+  caption-side: top;
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 500px;
+  /* Ancho de la tabla */
+}
+
+.tabla-datos td {
+  padding: 4px;
+}
+
+.tabla-datos th {
+  background-color: gray;
+}
+
+caption {
+  padding-bottom: 1em;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid black;
+  height: 2em;
+  text-align: center;
+}
+
+/* Elimina los bordes de una celda en particular */
+.celda-vacia {
+  border: 0px solid black;
+  height: 2em;
+  background-color: white;
+}
+
+/* ============= */
+.tabla {
+  display: grid;
+  place-items: start center;
+}
+
+.tabla-centrar-right {
+  display: grid;
+  place-items: center end;
+}

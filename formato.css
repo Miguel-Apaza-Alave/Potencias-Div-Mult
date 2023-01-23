@@ -1,0 +1,154 @@
+
+.datos-estudiante {
+    display: grid;
+    grid-template-columns: 65% 20% 15%; /* Nombre - Puntos - Nota */
+    grid-template-rows: auto;
+    justify-content: stretch;
+
+}
+
+/* Página con dos columnas */
+.dos-columnas {
+
+    font-size: 17px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    grid-template-rows: auto;
+   
+}
+/* Página con dos columnas */
+.dos-columnas-gap {
+
+    font-size: 17px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    grid-template-rows: auto;
+    gap:2em ;
+}
+.dos-columnas-60-40 {
+
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    justify-content: space-between;
+    grid-template-rows: auto;
+}
+
+.dos-columnas-80-20{
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    justify-content: space-between;
+    grid-template-rows: auto;
+}
+
+.dos-columnas-70-30 {
+
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    justify-content: space-between;
+    grid-template-rows: auto;
+}
+.dos-columnas-40-60 {
+
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    justify-content: space-between;
+    grid-template-rows: auto;
+}
+.dos-columnas-30-70 {
+
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: space-between;
+    grid-template-rows: auto;
+}
+
+.tres-columnas {
+
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    grid-template-rows: auto;
+}
+
+.img-center-right {
+    display: grid;
+    place-items:center end;
+ 
+   
+    
+}
+.img-center {
+    display: grid;
+    place-items:center;
+}
+
+.img-center-right, .img-center > img{
+    width:auto;
+}
+
+/* Página con dos columnas */
+.img-alternativas {
+
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+    grid-template-rows: auto auto;
+    text-align: center;
+
+}
+
+
+.img-35 {
+
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    
+    grid-template-rows: auto auto;
+    text-align: center;
+
+}
+.img-35 img{
+    margin: 0 auto;
+}
+
+
+
+ul > li{
+    padding: 6px;
+}
+
+.nota{
+    background-color: ghostwhite ;
+    border: solid black 2px;
+    border-radius:14px;
+    padding: 10px;
+}
+
+.p-pregunta > p{
+    margin-top:0.5em;
+    margin-bottom: 2em;
+}
+
+
+.problema{
+    display: grid;
+    grid-template-columns: 26px calc(100% - 26px);
+    justify-content: space-between;
+    grid-template-rows: auto;
+    background-color: white;
+    
+}
+.problema p{
+    margin:0;
+}
+

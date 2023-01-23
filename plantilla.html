@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Documento</title>
+    <!--  mathjack anterior
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"> </script>
+    -->
+    <!-- Mathjack nuevo -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <!-- ============== 
+
+ 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+-->
+
+    <link rel="stylesheet" href="config.css">
+    <link rel="stylesheet" href="formato.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="dist/vue.js"></script>
+
+
+</head>
+
+<!-- Inicio de estilos -->
+<style>
+
+</style>
+<!-- Fin de estilos -->
+
+<body>
+
+    <!-- Inicio de Vue-->
+    <div id='App'>
+        <!-- Hoja (01) -->
+        <div class='hoja'>
+            <div class="contenido">
+                <div>
+                    <div class='membrete'>
+                        <img src="Logo NAC.png" alt="">
+                    </div>
+
+                    <div class='info-doc'>
+                        <div class="titulo">
+                            {{guia.titulo }}
+                        </div>
+
+                        <div class="version">
+                            <span>Profesor: {{guia.profesor }}</span><br>
+                            <span>Versión: {{guia.version }}</span>
+                        </div>
+
+
+                        <div class='dos-columnas-80-20'>
+                            <div><big><b>Nombre:</b></big></div>
+
+                            <div><big><b>Curso:</b></big></div>
+                        </div>
+
+
+                        <p class='objetivo'><big><b>Objetivo:</b></big>
+                            <span>{{guia.objetivo}}</span>
+                        </p>
+                        <!--
+                        <p class='instrucciones'><big><b>Instrucciones:</b></big>
+                            <span>{{guia.instrucciones }}</span>
+                        </p>
+                        -->
+
+                    </div><!-- Fin de info-doc -->
+
+                    <div class='ejercicio'>
+                        <!--
+                        *    Procedencia: Título, página n°.
+                        *    Número del ejercicio: n°
+                        *    Errata: descripción, fecha, estado: (corregido | por corregir).
+                        *    Nivel: 6[] | 7mo[] | 8vo[] | 1m[] |2m[] | 3m[] | 4m[] | PAES[] | PDT[] | PSU[] | PAA[]
+                        *    Tipo de ejercicio: Teórico[] | Calcular[] | Aplicación[]
+                        *    Dificultad: baja[] | media[] | alta[] | extrema[]
+                        *    Respuesta:
+                        *    ID:
+                        -->
+                        <div><b>1</b></div>
+                        <div>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit nulla distinctio eum
+                            nesciunt aliquam recusandae quidem, illo, nisi necessitatibus quas ipsa, saepe tenetur error
+                            fugiat unde! Aperiam, assumenda saepe!
+                            <br>
+                            <div class='alternativas-v'>
+                                <p>A) \( 1 \)</p>
+                                <p class='opcion-correcta'>B) \( 2 \)</p>
+                                <p>C) \( 3 \)</p>
+                                <p>D) \( 4 \)</p>
+                                <p>E) \( 5 \)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  fin del ejercicio  -->
+
+                    <div class='ejercicio'>
+                        <!--
+                        *    Procedencia: Título, página n°.
+                        *    Número del ejercicio: n°
+                        *    Errata: descripción, fecha, estado: (corregido | por corregir).
+                        *    Nivel: 6[] | 7mo[] | 8vo[] | 1m[] |2m[] | 3m[] | 4m[] | PAES[] | PDT[] | PSU[] | PAA[]
+                        *    Tipo de ejercicio: Teórico[] | Calcular[] | Aplicación[]
+                        *    Dificultad: baja[] | media[] | alta[] | extrema[]
+                        *    Respuesta:
+                        *    ID:
+                        -->
+                        <div><b>1</b></div>
+                        <div> enunciado
+                            <div class='dos-columnas-gap'>
+                                <div>
+                                    <!--  columna 1  -->
+                                    <div class='problema'>
+                                        <b>A)</b>
+                                        <p>
+                                            enunciado
+                                        </p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <!--  columna 2  -->
+                                    <div class='problema'>
+                                        <b>B)</b>
+                                        <p>
+                                            enunciado
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  fin de problemas  -->
+
+                    <div class='item'>
+                        <!--
+                        *    Procedencia: Matemática  - , página .
+                        *    Número del ejercicio: 
+                        *    Errata: descripción, fecha, estado: (corregido | por corregir).
+                        *    Nivel: 7mo[] | 8vo[] | 1m[] | 2m[x] | 3m[] | 4m[] | PAES[] | PDT[] | PSU[]
+                        *    Tipo de ejercicio: Teórico[] | Calcular[] | Aplicación[]
+                        *    Dificultad: baja[x] | media[] | alta[] | extrema[]
+                        *    Respuesta:
+                        *    ID:
+                        -->
+                        <div><b>1)</b></div>
+                        <div>enunciado item
+                            <div class='dos-columnas-gap'>
+                                <div>
+                                    <!--  columna 1  -->
+                                    <p><b>A)</b> \( \)</p>
+                                    <p><b>B)</b> \( \)</p>
+                                    <p><b>C)</b> \( \)</p>
+                                </div>
+                                <div>
+                                    <!--  columna 2  -->
+                                    <p><b>D)</b> \( \)</p>
+                                    <p><b>E)</b> \( \)</p>
+                                    <p><b>F)</b> \( \)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--  fin del item  -->
+
+
+                </div>
+                <div class='numerar-right'>11</div>
+            </div>
+        </div>
+
+        <!-- Fin de page (01) -->
+        <!--                        |==============[ 01 ]==============|                        -->
+        <!-- inicio de hoja (2) -->
+        <div class='hoja'>
+            <div class='contenido'>
+                <!--  Inicio de contenido  -->
+                <div>
+                    <div class="texto-centrado"><b>
+                            <h2>División de Potencias de Base Racional</h2>
+                        </b></div>
+                    <div class='nota'>
+                        <b><big>Nota</big> </b>
+                        <div>de base racional e igual exponente entero, se dividen las bases y se mantiene el exponente.
+                            <div class="texto-centrado">
+
+                                \(
+                                \left(\frac{a}{b}\right)^n:\left(\frac{c}{d}\right)^n=\left(\frac{a}{b}:
+                                \frac{c}{d}\right)^n, \operatorname{con} \frac{a}{b}, \frac{c}{d} \in \mathbb{Q}-\{0\},
+                                b \neq 0, d \neq 0, n \in \mathbb{Z}
+                                \)
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="texto-centrado">Ejemplo \( \displaystyle \left(\frac{5}{2}\right)^{4}
+                        \div \left(\frac{3}{7}\right)^{4}= \left( \frac{5 }{2} \div \frac{3 }{7}\right)^{4}= \left(
+                        \frac{5 }{2} \cdot \frac{7 }{3}\right)^{4} =
+                        \left( \frac{35}{6} \right)^{4} \)
+                    </div>
+
+                    <div class='item'>
+                        <!--
+                        *    Procedencia: Matemática  - , página .
+                        *    Número del ejercicio: 
+                        *    Errata: descripción, fecha, estado: (corregido | por corregir).
+                        *    Nivel: 7mo[] | 8vo[] | 1m[] | 2m[x] | 3m[] | 4m[] | PAES[] | PDT[] | PSU[]
+                        *    Tipo de ejercicio: Teórico[] | Calcular[] | Aplicación[]
+                        *    Dificultad: baja[x] | media[] | alta[] | extrema[]
+                        *    Respuesta:
+                        *    ID:
+                        -->
+                        <div><b>1)</b></div>
+                        <div>enunciado item
+                            <div class='dos-columnas'>
+                                <div class="items-ejercicios">
+                                    <!--  columna 1  -->
+
+                                    <p><b>A)</b> \( \displaystyle \left(\frac{1}{2}\right)^{ 2 }
+                                        : \left(\frac{1}{3}\right)^{ 2 } = \)</p>
+
+
+                                    <p><b>B)</b> \( \displaystyle \left(\frac{2}{3}\right)^{ 3 }
+                                        : \left(\frac{5}{3}\right)^{ 3 } = \)</p>
+
+
+                                    <p><b>C)</b> \( \displaystyle \left(\frac{2}{5}\right)^{ 4 }
+                                        : \left(\frac{4}{5}\right)^{ 4 } = \)</p>
+
+                                    <p><b>D)</b> \( \displaystyle \left(\frac{6}{1}\right)^{ 0 }
+                                        : \left(\frac{1}{2}\right)^{ 0 } = \) </p>
+                                </div>
+
+                                <div class="items-ejercicios">
+                                    <!--  columna 2  -->
+
+                                    <p><b>E)</b> \( \displaystyle \left(\frac{3}{5}\right)^{ 1 }
+                                        : \left(\frac{3}{5}\right)^{ 1 } = \)</p>
+
+                                    <p><b>F)</b> \( \displaystyle \left(\frac{3}{4}\right)^{ 3 }
+                                        : \left(\frac{2}{8}\right)^{ 3 } = \)</p>
+
+                                    <p><b>G)</b> \( \displaystyle \left(\frac{1}{10}\right)^{ 4 }
+                                        : \left(\frac{1}{5}\right)^{ 4 } = \)</p>
+
+                                    <p><b>H)</b> \( \displaystyle \left(\frac{5}{1}\right)^{ 5 }
+                                        : \left(\frac{3}{2}\right)^{ 5 } = \)</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--  fin del item  -->
+
+            </div>
+            <div class='numerar-right'>02</div>
+        </div><!--  Fin de contenido  -->
+    </div>
+    <!-- fin de hoja (2}) -->
+    <!--                        |==============[ 2 ]==============|                        -->
+    <!-- inicio de hoja (3) -->
+    <div class='hoja'>
+        <div class='contenido'>
+            <!--  Inicio de contenido  -->
+            <div>
+                <div class='nota'>
+                    <b><big>Nota</big> </b>
+                    <div>de igual base racional y exponente entero, se conserva la base y al exponente del dividendo se
+                        le resta el exponente del divisor.
+                        <div class="texto-centrado">
+                            \( \left(\frac{a}{b}\right)^m:\left(\frac{a}{b}\right)^n=\left(\frac{a}{b}\right)^{m-n},
+                            \operatorname{con} \frac{a}{b} \in \mathbb{Q}-\{0\}, b \neq 0, n, m \in \mathbb{Z} \)
+                        </div>
+                    </div>
+                </div>
+                <div class='item'>
+                    <!--
+                    *    Procedencia: Matemática 1 medio - 2021 , página 33.
+                    *    Número del ejercicio: 
+                    *    Errata: descripción, fecha, estado: (corregido | por corregir).
+                    *    Nivel: 7mo[] | 8vo[] | 1m[x] | 2m[] | 3m[] | 4m[] | PAES[] | PDT[] | PSU[]
+                    *    Tipo de ejercicio: Teórico[] | Calcular[x] | Aplicación[]
+                    *    Dificultad: baja[x] | media[x] | alta[] | extrema[]
+                    *    Respuesta:
+                    *    ID:
+                    -->
+                    <div><b>1)</b></div>
+                    <div>enunciado item
+                        <div class='dos-columnas-gap'>
+                            <div>
+                                <!--  columna 1  -->
+                                <p><b>A)</b> \( \displaystyle \left( \frac{2}{7} \right)^{6} : \left( \frac{2}{7}
+                                    \right)^{4} = \)</p>
+                                <p><b>B)</b> \( \( \displaystyle \left( - \frac{1}{10} \right)^{2} : \left(
+                                    -\frac{1}{10} \right)^{-3} = \)</p>
+                                <p><b>C)</b> \( \displaystyle \left( - \frac{5}{8} \right)^{3} : \left( \frac{1}{6}
+                                    \right)^{3} = \)</p>
+                            </div>
+                            <div>
+                                <!--  columna 2  -->
+                                <p><b>D)</b> \( \displaystyle \left( \frac{2}{3} \right)^{-4} : \left( \frac{1}{3}
+                                    \right)^{-4} = \)</p>
+                                <p><b>E)</b> \( \)</p>
+                                <p><b>F)</b> \( \)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--  fin del item  -->
+                <div class='ejercicio'>
+                    <!--
+                    *    Procedencia: Matemática 1 medio - 2021, página 33.
+                    *    Número del ejercicio: 2
+                    *    Errata: descripción, fecha, estado: (corregido | por corregir).
+                    *    Nivel: 6[] | 7mo[] | 8vo[] | 1m[x] |2m[] | 3m[] | 4m[] | PAES[] | PDT[] | PSU[] | PAA[]
+                    *    Tipo de ejercicio: Teórico[] | Calcular[x] | Aplicación[]
+                    *    Dificultad: baja[] | media[x] | alta[] | extrema[]
+                    *    Respuesta:
+                    *    ID:
+                    -->
+                    <div><b style="line-height:2em;">2)</b></div>
+                    <div>
+                        En una división de fracciones el dividendo es \( \left(\frac{1}{4}\right)^{-3} \) y el divisor
+                        \( \left(\frac{1}{4}\right)^{-1}\). ¿Cuál es la mitad del cociente?
+
+
+                    </div>
+                </div>
+                <!--  fin del ejercicio  -->
+            </div>
+            <div class='numerar-right'>03</div>
+        </div><!--  Fin de contenido  -->
+    </div>
+    <!-- fin de hoja (3}) -->
+    <!--                        |==============[ 3 ]==============|                        -->
+    <!-- inicio de hoja (4) -->
+    <div class='hoja'>
+        <div class='contenido'>
+            <!--  Inicio de contenido  -->
+            <div>
+                <h2 class="texto-centrado">Problemas</h3>
+
+                    <div class='ejercicio'>
+                        <!--
+                    *    Procedencia: Título, página n°.
+                    *    Número del ejercicio: n°
+                    *    Errata: descripción, fecha, estado: (corregido | por corregir).
+                    *    Nivel: 6[] | 7mo[] | 8vo[] | 1m[] |2m[] | 3m[] | 4m[] | PAES[] | PDT[] | PSU[] | PAA[]
+                    *    Tipo de ejercicio: Teórico[] | Calcular[] | Aplicación[]
+                    *    Dificultad: baja[] | media[] | alta[] | extrema[]
+                    *    Respuesta:
+                    *    ID:
+                    -->
+                        <div><b>1</b></div>
+                        <div> Determina según corresponda.
+                            <div class='dos-columnas-gap'>
+                                <div>
+                                    <!--  columna 1  -->
+                                    <div class='problema' style="height:14em;">
+                                        <b>A)</b>
+                                        <p>
+                                            El área de un cuadrado cuyo lado mide \( \left( \frac{3}{5} \right )^{2}
+                                            cm\)
+                                        </p>
+                                    </div>
+                                    <div class='problema' style="height:14em;">
+                                        <b>B)</b>
+                                        <p>
+                                            El volumen de un cubo de arista \( \left( \frac{2}{5} \right )^{-4} cm\)
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <!--  columna 2  -->
+                                    <div class='problema' style="height:14em;">
+                                        <b>C)</b>
+                                        <p>
+                                            El largo de un rectángulo mide \(25 \mathrm{~cm}\) y su ancho \(16
+                                            \mathrm{~cm}\). Si cada uno de los lados disminuye a la novena parte, ¿cuál
+                                            es el área del rectángulo? Expresa el resultado con una potencia.
+                                        </p>
+                                    </div>
+                                    <div class='problema' style="height:14em;">
+                                        <b>D)</b>
+                                        <p>
+                                            Un terreno rectangular mide \(0,25 km\) de ancho y \(0,81 km\) de largo.
+                                            ¿Qué
+                                            potencia representa el área del terreno?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  fin de problemas  -->
+                    <div class='ejercicio'>
+                        <!--
+                        *    Procedencia: Matemáticaa 1 medio 2021, página 35°.
+                        *    Número del ejercicio: 9°
+                        *    Errata: descripción, fecha, estado: (corregido | por corregir).
+                        *    Nivel: 6[] | 7mo[] | 8vo[] | 1m[x] |2m[] | 3m[] | 4m[] | PAES[] | PDT[] | PSU[] | PAA[]
+                        *    Tipo de ejercicio: Teórico[] | Calcular[] | Aplicación[x] | Profundización[]
+                        *    Dificultad: baja[] | media[] | alta[x] | extrema[x]
+                        *    Respuesta:
+                        *    ID:
+                        -->
+                        <div><b>2</b></div>
+                        <div>
+                             Observen la imagen en la que los rectángulos tienen igual área, y luego respondan.
+                            <br><br>
+                            <div class="img-center"><img src="rectangulos.png"  style="height:150px;" alt=""></div>
+                            <div class='alternativas-v'>
+                                <p>A) ¿Cuál es el valor de \(x\)?</p><br>
+                                <p class='opcion-correcta'>B) ¿Cómo lo resolvieron?</p><br>
+                                <p>C) ¿Cómo pueden comprobar que el valor de \(x\) que obtuvieron es correcto?</p><br>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--  fin del ejercicio  -->
+            </div>
+            <div class='numerar-right'>04</div>
+        </div><!--  Fin de contenido  -->
+    </div>
+    <!-- fin de hoja (4}) -->
+    <!--                        |==============[ 4 ]==============|                        -->
+    <!-- inicio de hoja (5) -->
+    <div class='hoja'>
+        <div class='contenido'><!--  Inicio de contenido  -->
+            <div>
+                <div class='ejercicio'>
+                    <!--
+                    *    Procedencia: Matemática 1 medio - 2021, página 35°.
+                    *    Número del ejercicio: n°
+                    *    Errata: descripción, fecha, estado: (corregido | por corregir).
+                    *    Nivel: 6[] | 7mo[] | 8vo[] | 1m[x] |2m[] | 3m[] | 4m[] | PAES[] | PDT[] | PSU[] | PAA[]
+                    *    Tipo de ejercicio: Teórico[] | Calcular[] | Aplicación[] | Profundización[x]
+                    *    Dificultad: baja[] | media[] | alta[x] | extrema[]
+                    *    Respuesta:
+                    *    ID:
+                    -->
+                    <div><b>3</b></div>
+                    <div> Evaluar si las siguientes afirmaciones son verdaderas considerando que \(a, b, c \in \mathbb{N} \) y \(a < b < c\).
+                        Justifiquen sus respuestas. <br><br>
+                        
+                        <div class='dos-columnas-gap'>
+                            <div><!--  columna 1  -->
+                                <div class='problema' style="height:12em;">
+                                    <b>A)</b>
+                                    <p>
+                                        \( \left(\frac{a}{b}\right)^{c}:\left(\frac{a}{b}\right)^{b}=\left( \frac{a}{b} \right )^{d},
+                                        \text { donde } d<0 \)
+                                    </p>
+                                </div>
+                                <div class='problema' style="height:12em;">
+                                    <b>B)</b>
+                                    <p>
+                                       \( \left(\frac{c}{b}\right)^{a} \) es un valor mayor que \(1\)
+                                    </p>
+                                </div>
+                            </div>
+                            <div><!--  columna 2  -->
+                                <div class='problema'  style="height:12em;">
+                                    <b>C)</b>
+                                    <p>
+                                        Si \(k=b\), se cumple que \(a^{k} \cdot a^{b}=1\).
+                                    </p>
+                                </div>
+                                <div class='problema' style="height:12em;">
+                                    <b>D)</b>
+                                    <p>
+                                        \( \frac{a b}{c} \cdot \left( \frac{a b}{c} \right)^{-3} = \left( \frac{c}{a b} \right)^{-2} \)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  fin de problemas  -->
+                <div class='ejercicio'>
+                    <!--
+                    *    Procedencia: Título, página n°.
+                    *    Número del ejercicio: n°
+                    *    Errata: descripción, fecha, estado: (corregido | por corregir).
+                    *    Nivel: 6[] | 7mo[] | 8vo[] | 1m[] |2m[] | 3m[] | 4m[] | PAES[] | PDT[] | PSU[] | PAA[]
+                    *    Tipo de ejercicio: Teórico[] | Calcular[] | Aplicación[] | Profundización[]
+                    *    Dificultad: baja[] | media[] | alta[] | extrema[]
+                    *    Respuesta:
+                    *    ID:
+                    -->
+                    <div><b>4</b></div>
+                    <div>
+                        Una arquitecta debe diseñar un tanque en forma de prisma rectangular con base cuadrada que contenga \(1,25 \mathrm{~m}^3\) de agua. Si la superficie disponible es de \( 1,44 \mathrm{~m}^{2} \), ¿qué altura debe tener el tanque? 
+                        <br>
+             
+                    </div>
+                </div>
+                <!--  fin del ejercicio  -->
+            </div>
+            <div class='numerar-right'>05</div>
+        </div><!--  Fin de contenido  -->
+    </div>
+    <!-- fin de hoja (5}) -->
+    <!--                        |==============[ 5 ]==============|                        -->
+    <!-- inicio de hoja (6) -->
+    <div class='hoja'>
+        <div class='contenido'><!--  Inicio de contenido  -->
+            <div>
+                <h2 class="texto-centrado">Multiplicación y División de Potencias</h2>
+                <div class='item'>
+                    <!--
+                    *    Procedencia: Matemática 1 Medio - 2021 , página 22.
+                    *    Número del ejercicio: 1 
+                    *    Errata: descripción, fecha, estado: (corregido | por corregir).
+                    *    Nivel: 7mo[] | 8vo[] | 1m[x] | 2m[x] | 3m[] | 4m[] | PAES[] | PDT[] | PSU[]
+                    *    Tipo de ejercicio: Teórico[] | Calcular[x] | Aplicación[] | Profundización[]
+                    *    Dificultad: baja[x] | media[x] | alta[] | extrema[]
+                    *    Respuesta:
+                    *    ID:
+                    -->
+                    <div><b>1)</b></div>
+                    <div>Expresa cada resultado como una potencia
+                        <div class='dos-columnas-gap'>
+                            <div><!--  columna 1  -->
+                                    <p><b>A)</b> \( \left( -\frac{7}{4} \right)^{-8} \cdot \left(-\frac{7}{4}\right)^{-4} = \)</p>
+                                    <p><b>B)</b> \( \left( \frac{9}{8} \right)^{-4} \cdot \left( \frac{8}{9} \right)^{-2} = \)</p>
+                                    <p ><b>C)</b> \( (0,2)^{-2} : (0,2)^{8} = \)</p>
+                            </div>
+                            <div><!--  columna 2  -->
+                                    <p><b>D)</b> \(  \left(-\frac{1}{2}\right)^{ - 6 } : \left(-\frac{1}{2}\right)^{-4} =\)</p> 
+                                    <p><b>E)</b> \( \left(-\frac{3}{5}\right)^5 \cdot \left(-\frac{5}{3}\right)^{-7} = \)</p> 
+                                    <p><b>F)</b> \( (1,5)^{-8} : (1,5)^{-12} = \)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--  fin del item  -->
+                <div class='ejercicio'>
+                    <!--
+                    *    Procedencia: Matemática 1 medio cuaderno - 2021, página 22°.
+                    *    Número del ejercicio: 2°
+                    *    Errata: descripción, fecha, estado: (corregido | por corregir).
+                    *    Nivel: 6[] | 7mo[] | 8vo[] | 1m[x] |2m[] | 3m[] | 4m[] | PAES[] | PDT[] | PSU[] | PAA[]
+                    *    Tipo de ejercicio: Teórico[x | Calcular[x] | Aplicación[] | Profundización[]
+                    *    Dificultad: baja[x] | media[x] | alta[] | extrema[]
+                    *    Respuesta:
+                    *    ID:
+                    -->
+                    <div><b>1</b></div>
+                    <div> enunciado de los problemas
+                        <div class='dos-columnas-gap'>
+                            <div><!--  columna 1  -->
+                                <div class='problema'>
+                                    <b>A)</b>
+                                    <p>
+                                        \( \left ( \frac{1}{5}  \right)^{2} \cdot 5 =\)
+                                    </p>
+                                </div>
+                                <div class='problema'>
+                                    <b>B)</b>
+                                    <p>
+                                        \( \left(\frac{2}{3}\right)^6 \cdot\left(\frac{3}{2}\right)^{-4} = \)
+                                    </p>
+                                </div>
+                            </div>
+                            <div><!--  columna 2  -->
+                                <div class='problema'>
+                                    <b>C)</b>
+                                    <p>
+                                        \( 0,25^{5} \cdot 8,5^{5} = \)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  fin de problemas  -->
+            </div>
+            <div class='numerar-right'>06</div>
+        </div><!--  Fin de contenido  -->
+    </div>
+    <!-- fin de hoja (6}) -->
+    <!--                        |==============[ 6 ]==============|                        -->
+    <!-- inicio de hoja (7) -->
+    <div class='hoja'>
+        <div class='contenido'><!--  Inicio de contenido  -->
+            <div>
+            </div>
+            <div class='numerar-right'>07</div>
+        </div><!--  Fin de contenido  -->
+    </div>
+    <!-- fin de hoja (7}) -->
+    <!--                        |==============[ 7 ]==============|                        -->
+    <!-- inicio de hoja de respuestas () -->
+    <div class='hoja'>
+        <div class="contenido">
+
+            <div>
+                <div class="texto-centrado"><b> <big> Las respuestas a Tus Problemas </big></b></div>
+                <div class='grid-respuestas'>
+                    <div class="grid-item" v-for="clave of respuestas">{{clave}}</div>
+                </div>
+            </div>
+            <div class='numerar-right'>0</div>
+
+        </div>
+    </div>
+    <!-- fin de hoja de respuestas() -->
+
+
+    </div><!-- Fin de Vue-->
+
+</body>
+
+
+
+
+
+<script src="template.js"></script>
+
+</html>
+
+
+<!-- 
+<br><br>
+<div class='tabla'>
+    <table class='tabla-datos' style='width:100%'>
+        <tr>
+            <th style='width:50%'>H1</th>
+            <th style='width:50%'>H2 </th>
+        </tr>
+        <tr>
+            
+            <td>A</td>
+            <td>B</td>
+        </tr>
+    </table>
+</div>
+<br>
+fila 1 -->

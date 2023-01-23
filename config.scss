@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+//Se definen los margenes, fuente y tamaño de la página
+$DOCUMENT_FONT_NAME:'Roboto',
+'sans-serif'; //Calibri;
+$DOCUMENT_FONT_SIZE:17px; //16px;
+$DOCUMENT_FONT_TITLE:24px;
+$DOCUMENT_FONT_SUBTITLE:18px;
+
+//Se define el tamaño de las páginas
+$LETTER_WIDTH: 21.6cm;
+$LETTER_HEIGHT: 27.95cm; //29.53cm;
+$OFFICE_WIDTH:21.6cm;
+$OFFICE_HEIGHT:32.97cm;
+
+$HOJA_WIDTH:$OFFICE_WIDTH;
+$HOJA_HEIGHT: $OFFICE_HEIGHT;
+$EQUATION_FONT_SIZE: 20px; //1.2em;//1.2em;
+$EQUATION_ENUNCIADO_FONT_SIZE: 1.2em;
+
+$MARGIN_LEFT: 1cm;
+$MARGIN_RIGHT: 1cm;
+$MARGIN_BOTTOM: 0.5cm;
+$MARGIN_TOP: 0.5cm;
+
+$OPCION-CORRECTA-COLOR:rgb(221, 224, 238); // none;
+$SECCION-COLOR: black; //none;
+
+//Tabla de datos
+$PADDING_TEXT:4px;
+
+body {
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+
+    font-family: $DOCUMENT_FONT_NAME;
+    font-size: $DOCUMENT_FONT_SIZE;
+}
+
+.hoja {
+    width: $HOJA_WIDTH;
+    height: $HOJA_HEIGHT;
+    margin: 0 auto;
+
+    //Comentar para eliminar los bordes
+    box-shadow: 0 1px $SECCION-COLOR inset,
+        1px 0 $SECCION-COLOR inset,
+        0 -1px $SECCION-COLOR inset,
+        -1px 0 $SECCION-COLOR inset;
+    background-color: white; // lightgray;
+    text-align: justify;
+}
+
+.bordes {
+    //Comentar para eliminar los bordes
+    box-shadow: 0 1px $SECCION-COLOR inset,
+        1px 0 $SECCION-COLOR inset,
+        0 -1px $SECCION-COLOR inset,
+        -1px 0 $SECCION-COLOR inset;
+}
+
+.membrete {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.membrete img {
+    display: block;
+    max-height: 50px;
+    width: auto;
+
+}
+
+.hoja .contenido {
+    height: calc(100% - $MARGIN_BOTTOM - $MARGIN_TOP);
+    padding-left: $MARGIN_LEFT;
+    padding-right: $MARGIN_RIGHT;
+    //padding-bottom: 0;
+    padding-top: $MARGIN_TOP;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.info-doc {
+    background-color: white;
+
+}
+
+.info-doc .version {
+    font-size: 14px;
+    text-align: center;
+}
+
+.info-doc .titulo {
+    text-align: center;
+    font-size: $DOCUMENT_FONT_TITLE;
+}
+
+.info-doc .objetivo {
+    font-size: 14px;
+}
+
+.grid-alternativas {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+
+
+.respuestas {
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 0 2px black inset;
+}
+
+.respuestas-item {
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    width: 33.3%;
+    height: 3em;
+    box-shadow: 0 0 0 1px black inset;
+}
+
+.numerar-right {
+    text-align: right;
+    background-color: white;
+}
+
+
+
+.ejercicio {
+    display: grid;
+    grid-template-columns: 26px calc(100% - 26px);
+    justify-content: space-between;
+    grid-template-rows: auto;
+    background-color: white;
+    margin-top: 1.5em;
+}
+
+.item {
+    display: grid;
+    grid-template-columns: 26px calc(100% - 26px);
+    justify-content: space-between;
+    grid-template-rows: auto;
+    background-color: white;
+    margin-top: 1.5em;
+}
+
+.item-ejercicios p {
+    margin-top: 0.8em;
+    margin-bottom: 0.8em;
+}
+
+// Centrado de elementos
+.centrar-elementos-h {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.centrar-elemento {
+    margin: 0 auto;
+}
+
+.centrar-elementos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.centrar-elementos-v {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.opcion-correcta {
+    background-color: $OPCION-CORRECTA-COLOR;
+}
+
+.texto-justificado {
+    text-align: justify;
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+.texto-alineado-right {
+    text-align: right;
+}
+
+
+//Configuración de las respuestas
+.grid-respuestas {
+    font-size: 16px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-between;
+    //grid-auto-rows: ; //define un alto para todas las filas
+    grid-template-rows: 48px 48px 48px 48px 48px 48px;
+    //justify-items: center; //alinea en horizontal
+    //align-items: center; //alinea en vertical
+}
+
+
+.grid-respuestas div {
+    align-self: center;
+    justify-self: center;
+}
+
+//======
+
+
+.titulo {
+    font-size: $DOCUMENT_FONT_TITLE;
+    font-weight: bolder;
+}
+
+.subtitulo {
+    font-size: $DOCUMENT_FONT_SUBTITLE;
+    font-weight: bolder;
+}
+
+
+
+/* Configuracón de la tabla */
+.tabla-datos {
+    margin-top: 50px;
+    caption-side: top;
+
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 500px;
+
+    /* Ancho de la tabla */
+}
+
+.tabla-datos td {
+    padding: $PADDING_TEXT;
+}
+
+.tabla-datos th {
+    background-color: gray;
+}
+
+caption {
+    padding-bottom: 1em;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+td,
+th {
+    border: 1px solid black;
+    height: 2em;
+    text-align: center;
+}
+
+/* Elimina los bordes de una celda en particular */
+.celda-vacia {
+    border: 0px solid black;
+    height: 2em;
+    background-color: white;
+
+}
+
+/* ============= */
+
+.tabla {
+    display: grid;
+    place-items: start center;
+}
+
+.tabla-centrar-right {
+    display: grid;
+    place-items: center end;
+}
